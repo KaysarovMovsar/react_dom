@@ -21,7 +21,6 @@ code {
   display: flex;
   list-style-type: none;
   justify-content: center;
-  padding-left: 0;
 }
 
 .nav_item {
@@ -30,9 +29,16 @@ code {
   background-color: aqua;
   padding: 10px;
   color: white;
+  font-size: 20px;
+}
+
+.nav_item a {
+  color: white;
+  text-decoration: none;
 }
 
 .flex {
-  width: 400px;
+  width: 700px;
   margin: 0 auto;
 }
+

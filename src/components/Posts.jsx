@@ -23,7 +23,7 @@ export const Posts = () => {
                     posts.map((item) => {
                         return(
                             <li>
-                                <Link to={`/posts/${item.id}`}>{item.title}</Link>
+                                <Link key={item.id} to={`/posts/${item.id}`}>{item.title}</Link>
                             </li>
                         )
                     })

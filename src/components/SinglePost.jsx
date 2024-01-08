@@ -18,7 +18,14 @@ export const SinglePost = () => {
     return (
         <div className="flex">
             <button onClick={MoveBack}>Назад</button>
-            <div>{post.title}</div>
+            { post && (
+                <>
+                    <h1>{post.title}</h1>
+                    <p>
+                        <b>{post.body}</b>
+                    </p>
+                </>
+            )}
         </div>
     );
 };
